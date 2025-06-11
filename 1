@@ -113,7 +113,7 @@
         <button class="btn btn-process" onclick="processImages()">로고 추가하기</button>
         <button class="btn btn-reset" onclick="resetSelection()">초기화</button>
         <div class="footer">
-            <p>by_예찬</p>
+            <p>by_지희</p>
         </div>
     </div>
 
@@ -137,7 +137,7 @@
 
         async function processImages() {
             const zip = new JSZip();
-            const logoImage = await fetch('/mnt/data/제목을 입력해주세요_-002 (2).png')
+            const logoImage = await fetch('/mnt/data/ㅇ우아매트로고.png')
                                     .then(response => response.blob());
             const logoURL = URL.createObjectURL(logoImage);
 
